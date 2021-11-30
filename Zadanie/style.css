@@ -1,0 +1,111 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header {
+  border: 2px solid black;
+  border-radius: 10% 10% 0 0;
+  margin: 0 50px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .headerCont {
+  height: 300px;
+  width: 500px;
+  background-image: url(https://media.istockphoto.com/photos/colleagues-in-business-meeting-picture-id134343840);
+  background-size: cover;
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav {
+  padding: 0 0;
+}
+
+body nav .navCont {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 50px;
+  height: 150px;
+}
+
+body nav .navCont button {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+}
+
+body main .mainCont {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-indent: 200px;
+  padding: 100px 400px;
+  margin: 0 50px;
+}
+
+body footer .footerCont {
+  border: 2px solid black;
+  border-radius: 0 0 10% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 50px;
+  padding: 0 200px;
+  height: 200px;
+  font-size: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer .footerCont .iconMailCont, body footer .footerCont .iconIgCont, body footer .footerCont .iconSpotifyCont, body footer .footerCont .iconYtCont {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer .footerCont .iconMailCont:hover, body footer .footerCont .iconIgCont:hover, body footer .footerCont .iconSpotifyCont:hover, body footer .footerCont .iconYtCont:hover {
+  color: green;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
