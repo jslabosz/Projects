@@ -5,7 +5,7 @@
 
 body {
   padding: 1vh 10vw;
-  background-image: url(img/sky-clouds-2560x1440.webp);
+  background-image: url("img/pobrane.webp");
   background-size: cover;
 }
 
@@ -34,17 +34,19 @@ body header .headerCont {
           align-items: center;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  -webkit-box-shadow: 10px 10px 15px;
+          box-shadow: 10px 10px 15px;
   height: 250px;
   width: 400px;
 }
 
 body header .headerCont .img {
-  outline: 5px solid rgba(255, 255, 255, 0.1);
+  outline: 5px solid rgba(255, 255, 255, 0.3);
   background-size: cover;
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  background-image: url(img/face.webp);
+  background-image: url("img/face.webp");
 }
 
 body main {
@@ -55,6 +57,8 @@ body main .mainCont {
   height: 70vh;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  -webkit-box-shadow: 10px 10px 15px;
+          box-shadow: 10px 10px 15px;
 }
 
 body footer {
@@ -81,6 +85,8 @@ body footer .footerCont {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-shadow: 10px 10px 15px;
+          box-shadow: 10px 10px 15px;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
 }
