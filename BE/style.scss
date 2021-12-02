@@ -112,6 +112,8 @@ body{
             padding: 30px;
            }
            .about{
+            font-family: 'Pacifico', cursive;
+            text-shadow: white 1px 1px 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -130,6 +132,7 @@ body{
                     padding: 0 10%;
                     .aboutMeTitle{
                         margin-bottom: 10px;
+                        font-size: 1.5rem;
                     }
                 }
                 .aboutTools{
@@ -144,6 +147,7 @@ body{
                         align-items: center;
                         margin-right: 5%;
                         .aboutSoftwareTitle{
+                            font-size: 1.3rem;
                             margin-bottom: 10px;
                         }
                     }
@@ -154,6 +158,7 @@ body{
                         align-items: center;
                         margin-left: 5%;
                         .aboutHardwareTitle{
+                            font-size: 1.3rem;
                             margin-bottom: 10px;
                         }
                     }
