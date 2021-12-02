@@ -5,8 +5,72 @@
 
 body {
   padding: 1vh 10vw;
-  background-image: url("img/pobrane.webp");
+  background-image: url("img/pexels-simon-berger-1323550.jpg");
   background-size: cover;
+}
+
+body nav {
+  top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+body nav .navCont {
+  font-family: 'Pacifico', cursive;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  -webkit-box-shadow: 5px 5px 15px;
+          box-shadow: 5px 5px 15px;
+  height: 130px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .navCont .navBtn {
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  width: 35%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body nav .navCont .navBtn a {
+  color: black;
+  text-decoration: none;
+}
+
+body nav .navCont .navBtn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body header {
@@ -34,10 +98,10 @@ body header .headerCont {
           align-items: center;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-  -webkit-box-shadow: 10px 10px 15px;
-          box-shadow: 10px 10px 15px;
+  -webkit-box-shadow: 5px 5px 15px;
+          box-shadow: 5px 5px 15px;
   height: 250px;
-  width: 400px;
+  width: 250px;
 }
 
 body header .headerCont .img {
@@ -46,7 +110,15 @@ body header .headerCont .img {
   border-radius: 50%;
   height: 150px;
   width: 150px;
+  background-image: url("img/BE.png");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .headerCont .img:hover, body header .headerCont img:active {
   background-image: url("img/face.webp");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main {
@@ -85,8 +157,8 @@ body footer .footerCont {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-shadow: 10px 10px 15px;
-          box-shadow: 10px 10px 15px;
+  -webkit-box-shadow: 5px 5px 15px;
+          box-shadow: 5px 5px 15px;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
 }
