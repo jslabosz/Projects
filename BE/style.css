@@ -5,7 +5,7 @@
 
 body {
   padding: 1vh 10vw;
-  background-image: url("img/pexels-simon-berger-1323550.jpg");
+  background-image: url("img/pexels-simon-berger-1323550.webp");
   background-size: cover;
 }
 
@@ -45,8 +45,8 @@ body nav .navCont .navBtnTracks {
   -webkit-box-shadow: 3px 3px 10px;
           box-shadow: 3px 3px 10px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +57,7 @@ body nav .navCont .navBtnTracks {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
-  width: 35%;
+  width: 40%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -71,8 +71,8 @@ body nav .navCont .navBtnAbout {
   -webkit-box-shadow: 3px 3px 10px;
           box-shadow: 3px 3px 10px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +83,7 @@ body nav .navCont .navBtnAbout {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
-  width: 35%;
+  width: 40%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -138,12 +138,14 @@ body header .headerCont .img {
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  background-image: url("img/BE.png");
+  background-image: url("img/BE.webp");
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 body header .headerCont .img:hover, body header .headerCont img:active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   background-image: url("img/face.webp");
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -162,6 +164,20 @@ body main .mainCont .tracks {
   border-radius: 10px;
   margin-bottom: 50px;
   padding: 30px;
+}
+
+body main .mainCont .tracks .tracksTitle {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .mainCont .about {
@@ -185,7 +201,7 @@ body main .mainCont .about {
   -webkit-box-shadow: 10px 10px 15px;
           box-shadow: 10px 10px 15px;
   border-radius: 10px;
-  padding: 50px 100px;
+  padding: 5% 10%;
 }
 
 body main .mainCont .about .aboutMe {
@@ -205,7 +221,29 @@ body main .mainCont .about .aboutMe {
   padding: 0 10%;
 }
 
+body main .mainCont .about .aboutMe .aboutMeDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 body main .mainCont .about .aboutMe .aboutMeTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
@@ -217,13 +255,14 @@ body main .mainCont .about .aboutTools {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 30px;
 }
 
 body main .mainCont .about .aboutTools .aboutSoftware {
+  width: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -237,15 +276,38 @@ body main .mainCont .about .aboutTools .aboutSoftware {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 5%;
+  margin: 3%;
 }
 
 body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
+body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 body main .mainCont .about .aboutTools .aboutHardware {
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,12 +321,34 @@ body main .mainCont .about .aboutTools .aboutHardware {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5%;
+  margin: 3%;
 }
 
 body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.3rem;
   margin-bottom: 10px;
+}
+
+body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 body footer {
@@ -383,5 +467,53 @@ body .credits .creditsCont {
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
   border-radius: 2px;
+}
+
+@media (max-width: 720px) {
+  body main .about {
+    padding: 30px 30px;
+  }
+  body main .about .aboutTools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  body main .about .aboutTools .aboutSoftware {
+    max-width: 65vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: 0;
+  }
+  body main .about .aboutTools .aboutHardware {
+    max-width: 65vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: 0;
+  }
+  body main .about .aboutTools .aboutHardware .aboutHardwareDesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
