@@ -404,6 +404,7 @@ body footer .footerCont .socials {
 body footer .footerCont .socialsSC a {
   text-decoration: none;
   color: black;
+  text-shadow: white 1px 1px 5px;
 }
 
 body footer .footerCont .socialsSC i {
@@ -429,6 +430,7 @@ body footer .footerCont .socialsSC i:hover {
 body footer .footerCont .socialsIG a {
   text-decoration: none;
   color: black;
+  text-shadow: white 1px 1px 5px;
 }
 
 body footer .footerCont .socialsIG i {
