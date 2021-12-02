@@ -10,7 +10,7 @@ body {
 }
 
 body nav {
-  top: 10px;
+  top: 1vh;
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -27,12 +27,9 @@ body nav {
 
 body nav .navCont {
   font-family: 'Pacifico', cursive;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-  -webkit-box-shadow: 5px 5px 15px;
-          box-shadow: 5px 5px 15px;
   height: 130px;
   width: 350px;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +41,11 @@ body nav .navCont {
           align-items: center;
 }
 
-body nav .navCont .navBtn {
+body nav .navCont .navBtnTracks {
+  -webkit-box-shadow: 3px 3px 10px;
+          box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,12 +62,38 @@ body nav .navCont .navBtn {
   transition: 0.5s;
 }
 
-body nav .navCont .navBtn a {
+body nav .navCont .navBtnTracks a {
   color: black;
   text-decoration: none;
 }
 
-body nav .navCont .navBtn:hover {
+body nav .navCont .navBtnAbout {
+  -webkit-box-shadow: 3px 3px 10px;
+          box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  width: 35%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body nav .navCont .navBtnAbout a {
+  color: black;
+  text-decoration: none;
+}
+
+body nav .navCont .navBtnTracks:hover, body nav .navCont .navBtnAbout:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scale(1.1);
@@ -100,8 +127,9 @@ body header .headerCont {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
-  height: 250px;
-  width: 250px;
+  border-radius: 10px;
+  height: 220px;
+  width: 220px;
 }
 
 body header .headerCont .img {
@@ -125,18 +153,123 @@ body main {
   padding-bottom: 50px;
 }
 
-body main .mainCont {
-  height: 70vh;
+body main .mainCont .tracks {
+  height: 80vh;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
   -webkit-box-shadow: 10px 10px 15px;
           box-shadow: 10px 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+body main .mainCont .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  -webkit-box-shadow: 10px 10px 15px;
+          box-shadow: 10px 10px 15px;
+  border-radius: 10px;
+  padding: 50px 100px;
+}
+
+body main .mainCont .about .aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+}
+
+body main .mainCont .about .aboutMe .aboutMeTitle {
+  margin-bottom: 10px;
+}
+
+body main .mainCont .about .aboutTools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+body main .mainCont .about .aboutTools .aboutSoftware {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+}
+
+body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareTitle {
+  margin-bottom: 10px;
+}
+
+body main .mainCont .about .aboutTools .aboutHardware {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+}
+
+body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareTitle {
+  margin-bottom: 10px;
 }
 
 body footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -146,8 +279,23 @@ body footer {
 }
 
 body footer .footerCont {
+  height: 250px;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .footerCont .socials {
   height: 150px;
-  width: 400px;
+  width: 20vw;
+  min-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,16 +307,17 @@ body footer .footerCont {
           justify-content: space-evenly;
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
+  border-radius: 10px;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
 }
 
-body footer .footerCont .footerContSC a {
+body footer .footerCont .socialsSC a {
   text-decoration: none;
   color: black;
 }
 
-body footer .footerCont .footerContSC i {
+body footer .footerCont .socialsSC i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,19 +330,19 @@ body footer .footerCont .footerContSC i {
   transition: 0.3s;
 }
 
-body footer .footerCont .footerContSC i:hover {
+body footer .footerCont .socialsSC i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body footer .footerCont .footerContIG a {
+body footer .footerCont .socialsIG a {
   text-decoration: none;
   color: black;
 }
 
-body footer .footerCont .footerContIG i {
+body footer .footerCont .socialsIG i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,10 +355,28 @@ body footer .footerCont .footerContIG i {
   transition: 0.3s;
 }
 
-body footer .footerCont .footerContIG i:hover {
+body footer .footerCont .socialsIG i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+body .credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body .credits .creditsCont {
+  font-size: 0.6rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  -webkit-box-shadow: 5px 5px 15px;
+          box-shadow: 5px 5px 15px;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=style.css.map */
