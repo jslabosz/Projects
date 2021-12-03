@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 1vh 10vw;
+  padding: 10px 10px;
   background-image: url("img/pexels-simon-berger-1323550.webp");
   background-size: cover;
 }
@@ -28,8 +28,9 @@ body nav {
 body nav .navCont {
   font-family: 'Pacifico', cursive;
   height: 130px;
-  width: 350px;
+  width: 450px;
   margin: 10px;
+  gap: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,14 +157,14 @@ body main {
 }
 
 body main .mainCont .tracks {
-  height: 80vh;
+  padding: 50px 50px 50px 50px;
+  height: 800px;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
   -webkit-box-shadow: 10px 10px 15px;
           box-shadow: 10px 10px 15px;
   border-radius: 10px;
   margin-bottom: 50px;
-  padding: 30px;
 }
 
 body main .mainCont .tracks .tracksTitle {
@@ -178,6 +179,36 @@ body main .mainCont .tracks .tracksTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 50px;
+}
+
+body main .mainCont .tracks .tracksCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+body main .mainCont .tracks .tracksCont .tracksCont1, body main .mainCont .tracks .tracksCont .tracksCont2, body main .mainCont .tracks .tracksCont .tracksCont3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+body main .mainCont .tracks .tracksCont .tracksCont1 iframe, body main .mainCont .tracks .tracksCont .tracksCont2 iframe, body main .mainCont .tracks .tracksCont .tracksCont3 iframe {
+  -webkit-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.699);
+          box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.699);
 }
 
 body main .mainCont .about {
@@ -221,19 +252,6 @@ body main .mainCont .about .aboutMe {
   padding: 0 10%;
 }
 
-body main .mainCont .about .aboutMe .aboutMeDesc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
 body main .mainCont .about .aboutMe .aboutMeTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,6 +264,19 @@ body main .mainCont .about .aboutMe .aboutMeTitle {
           align-items: center;
   margin-bottom: 10px;
   font-size: 1.5rem;
+}
+
+body main .mainCont .about .aboutMe .aboutMeDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 body main .mainCont .about .aboutTools {
@@ -383,7 +414,7 @@ body footer .footerCont {
 
 body footer .footerCont .socials {
   height: 150px;
-  width: 20vw;
+  width: 500px;
   min-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,6 +503,18 @@ body .credits .creditsCont {
 }
 
 @media (max-width: 720px) {
+  body main .mainCont .tracks {
+    height: 1300px;
+  }
+  body main .mainCont .tracks .tracksCont .tracksCont1, body main .mainCont .tracks .tracksCont .tracksCont2, body main .mainCont .tracks .tracksCont .tracksCont3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   body main .about {
     padding: 30px 30px;
   }

@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    padding: 1vh 10vw;
+    padding: 10px 10px;
     background-image: url("img/pexels-simon-berger-1323550.webp");
     background-size: cover;
     nav{
@@ -18,8 +18,9 @@ body{
             // border-radius: 10px;
             // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             height: 130px;
-            width: 350px;
+            width: 450px;
             margin: 10px;
+            gap: 50px;
             // border: 2px dashed black;
             display: flex;
             justify-content: space-evenly;
@@ -106,18 +107,61 @@ body{
         padding-bottom: 50px;
         .mainCont{
            .tracks{
-            height: 80vh;
+            padding: 50px 50px 50px 50px;
+            height: 800px;
+            // background-image: linear-gradient(to left, transparent,white, white, white,white, white, white, white,white, white, white, white,white, white, white, white, white,white, white, white, white,white, white, white, white, white, white, white, white,white, white, white, white, transparent);
             background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 10px 10px 15px;
             border-radius: 10px;
             margin-bottom: 50px;
-            padding: 30px;
             .tracksTitle{
                 font-size: 3rem;
                 font-family: 'Pacifico', cursive;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 50px;
+            }
+            .tracksCont{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .tracksCont1,.tracksCont2,.tracksCont3{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    iframe{
+                        box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.699);
+                    }
+                }
+                // .tracksCont1{
+                //     // padding: 5%;
+                //     // display: grid;
+                //     // grid-template-columns: auto auto auto;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     gap: 10px;
+                // }
+                // .tracksCont2{
+                //     // padding: 5%;
+                //     // display: grid;
+                //     // grid-template-columns: auto auto auto;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     gap: 10px;
+                // }
+                // .tracksCont3{
+                //     // padding: 5%;
+                //     // display: grid;
+                //     // grid-template-columns: auto auto auto;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     gap: 10px;
+                // }
             }
             }
            .about{
@@ -139,18 +183,18 @@ body{
                     justify-content: center;
                     align-items: center;
                     padding: 0 10%;
-                    .aboutMeDesc{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                    }
                     .aboutMeTitle{
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         margin-bottom: 10px;
                         font-size: 1.5rem;
+                    }
+                    .aboutMeDesc{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
                 .aboutTools{
@@ -220,7 +264,7 @@ body{
             // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             .socials{
             height: 150px;
-            width: 20vw;
+            width: 500px;
             min-width: 250px;
             display: flex;
             align-items: center;
@@ -280,6 +324,17 @@ body{
 @media (max-width: 720px){
     body{
         main{
+            .mainCont{
+                .tracks{
+                    height: 1300px;
+                    .tracksCont{
+                        .tracksCont1,.tracksCont2,.tracksCont3{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
             .about{
                 padding: 30px 30px;
                 .aboutTools{
