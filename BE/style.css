@@ -3,14 +3,68 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 10px 10px;
   background-image: url("img/pexels-simon-berger-1323550.webp");
   background-size: cover;
 }
 
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .headerCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  -webkit-box-shadow: 5px 5px 15px;
+          box-shadow: 5px 5px 15px;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+body header .headerCont .img {
+  outline: 5px solid rgba(255, 255, 255, 0.3);
+  background-size: cover;
+  border-radius: 50%;
+  height: 230px;
+  width: 230px;
+  background-image: url("img/BE.webp");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .headerCont .img:hover, body header .headerCont img:active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background-image: url("img/face.webp");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body nav {
-  top: 1vh;
+  top: 0px;
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -22,15 +76,15 @@ body nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
 }
 
 body nav .navCont {
   font-family: 'Pacifico', cursive;
+  font-size: 2rem;
   height: 130px;
   width: 450px;
   margin: 10px;
-  gap: 50px;
+  gap: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,12 +96,36 @@ body nav .navCont {
           align-items: center;
 }
 
+body nav .navCont .navBtnHome {
+  -webkit-box-shadow: 3px 3px 10px;
+          box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  width: 40%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body nav .navCont .navBtnHome a {
+  color: black;
+  text-decoration: none;
+}
+
 body nav .navCont .navBtnTracks {
   -webkit-box-shadow: 3px 3px 10px;
           box-shadow: 3px 3px 10px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +151,6 @@ body nav .navCont .navBtnAbout {
           box-shadow: 3px 3px 10px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,64 +178,9 @@ body nav .navCont .navBtnTracks:hover, body nav .navCont .navBtnAbout:hover {
           transform: scale(1.1);
 }
 
-body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 50px;
-}
-
-body header .headerCont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-  -webkit-box-shadow: 5px 5px 15px;
-          box-shadow: 5px 5px 15px;
-  border-radius: 10px;
-  height: 220px;
-  width: 220px;
-}
-
-body header .headerCont .img {
-  outline: 5px solid rgba(255, 255, 255, 0.3);
-  background-size: cover;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  background-image: url("img/BE.webp");
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-body header .headerCont .img:hover, body header .headerCont img:active {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  background-image: url("img/face.webp");
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-body main {
-  padding-bottom: 50px;
-}
-
 body main .mainCont .tracks {
   padding: 50px 50px 50px 50px;
-  height: 800px;
+  height: 900px;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
   -webkit-box-shadow: 10px 10px 15px;
@@ -168,7 +190,7 @@ body main .mainCont .tracks {
 }
 
 body main .mainCont .tracks .tracksTitle {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: 'Pacifico', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,7 +201,7 @@ body main .mainCont .tracks .tracksTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 body main .mainCont .tracks .tracksCont {
@@ -263,7 +285,7 @@ body main .mainCont .about .aboutMe .aboutMeTitle {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 4rem;
 }
 
 body main .mainCont .about .aboutMe .aboutMeDesc {
@@ -277,6 +299,7 @@ body main .mainCont .about .aboutMe .aboutMeDesc {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 2rem;
 }
 
 body main .mainCont .about .aboutTools {
@@ -320,7 +343,7 @@ body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.3rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
@@ -335,6 +358,7 @@ body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareDesc {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 body main .mainCont .about .aboutTools .aboutHardware {
@@ -365,7 +389,7 @@ body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.3rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
@@ -380,6 +404,7 @@ body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareDesc {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 body footer {
@@ -503,8 +528,14 @@ body .credits .creditsCont {
 }
 
 @media (max-width: 720px) {
+  body nav .navCont {
+    gap: 13px;
+  }
+  body nav .navCont .navBtnHome, body nav .navCont .navBtnTracks, body nav .navCont .navBtnAbout {
+    padding: 0 5px;
+  }
   body main .mainCont .tracks {
-    height: 1300px;
+    height: 1350px;
   }
   body main .mainCont .tracks .tracksCont .tracksCont1, body main .mainCont .tracks .tracksCont .tracksCont2, body main .mainCont .tracks .tracksCont .tracksCont3 {
     display: -webkit-box;

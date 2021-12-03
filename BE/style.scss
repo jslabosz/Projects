@@ -1,36 +1,92 @@
 *{
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     padding: 10px 10px;
     background-image: url("img/pexels-simon-berger-1323550.webp");
     background-size: cover;
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding-bottom: 50px;
+        .headerCont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 3px dashed white;
+            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+            box-shadow: 5px 5px 15px;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+            .img{
+                outline: 5px solid rgba(255, 255, 255, 0.3);
+                // border: 3px solid white;
+                background-size: cover;
+                border-radius: 50%;
+                height: 230px;
+                width: 230px;
+                background-image: url("img/BE.webp");
+                transition: 0.5s;
+            }
+            .img:hover,img:active{
+                transform: rotate(360deg);
+                background-image: url("img/face.webp");
+                transition: 0.5s;
+            }
+        }
+    }
     nav{
-        top: 1vh;
+        top: 0px;
         position: sticky;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         .navCont{
             font-family: 'Pacifico', cursive;
+            font-size: 2rem;
             // box-shadow: 3px 3px 10px;
             // border-radius: 10px;
             // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             height: 130px;
             width: 450px;
             margin: 10px;
-            gap: 50px;
+            gap: 40px;
             // border: 2px dashed black;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            .navBtnHome{
+                // border: 3px solid rgba(255, 255, 255, 0.5);
+                box-shadow: 3px 3px 10px;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.8);
+                // font-size: 2rem;
+                // border-radius: 5px;
+                // background-color: rgba(255, 255, 255, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 2px dashed black;
+                height: 50%;
+                width: 40%;
+                transition: 0.5s;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
             .navBtnTracks{
                 // border: 3px solid rgba(255, 255, 255, 0.5);
                 box-shadow: 3px 3px 10px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.8);
-                font-size: 1.7rem;
+                // font-size: 2rem;
                 // border-radius: 5px;
                 // background-color: rgba(255, 255, 255, 0.5);
                 display: flex;
@@ -50,7 +106,7 @@ body{
                 box-shadow: 3px 3px 10px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.8);
-                font-size: 1.7rem;
+                // font-size: 2rem;
                 // border-radius: 5px;
                 // background-color: rgba(255, 255, 255, 0.5);
                 display: flex;
@@ -71,56 +127,26 @@ body{
             }
         }
     }
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
-        .headerCont{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // border: 3px dashed white;
-            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-            box-shadow: 5px 5px 15px;
-            border-radius: 10px;
-            height: 220px;
-            width: 220px;
-            .img{
-                outline: 5px solid rgba(255, 255, 255, 0.3);
-                // border: 3px solid white;
-                background-size: cover;
-                border-radius: 50%;
-                height: 150px;
-                width: 150px;
-                background-image: url("img/BE.webp");
-                transition: 0.5s;
-            }
-            .img:hover,img:active{
-                transform: rotate(360deg);
-                background-image: url("img/face.webp");
-                transition: 0.5s;
-            }
-        }
-    }
     main{
-        padding-bottom: 50px;
+        // padding-top: 50px;
+        // padding-bottom: 50px;
         .mainCont{
            .tracks{
             padding: 50px 50px 50px 50px;
-            height: 800px;
+            height: 900px;
             // background-image: linear-gradient(to left, transparent,white, white, white,white, white, white, white,white, white, white, white,white, white, white, white, white,white, white, white, white,white, white, white, white, white, white, white, white,white, white, white, white, transparent);
             background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 10px 10px 15px;
             border-radius: 10px;
             margin-bottom: 50px;
             .tracksTitle{
-                font-size: 3rem;
+                font-size: 5rem;
                 font-family: 'Pacifico', cursive;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+                // margin-top: 50px;
             }
             .tracksCont{
                 display: flex;
@@ -188,13 +214,15 @@ body{
                         justify-content: center;
                         align-items: center;
                         margin-bottom: 10px;
-                        font-size: 1.5rem;
+                        font-size: 4rem;
+                        // margin-top: 50px;
                     }
                     .aboutMeDesc{
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
+                        font-size: 2rem;
                     }
                 }
                 .aboutTools{
@@ -213,7 +241,7 @@ body{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-size: 1.3rem;
+                            font-size: 3rem;
                             margin-bottom: 10px;
                         }
                         .aboutSoftwareDesc{
@@ -221,6 +249,7 @@ body{
                             justify-content: center;
                             align-items: center;
                             text-align: center;
+                            font-size: 1.5rem;
                         }
                     }
                     .aboutHardware{
@@ -234,7 +263,7 @@ body{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-size: 1.3rem;
+                            font-size: 3rem;
                             margin-bottom: 10px;
                         }
                         .aboutHardwareDesc{
@@ -242,6 +271,7 @@ body{
                             justify-content: center;
                             align-items: center;
                             text-align: center;
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -323,10 +353,19 @@ body{
 }
 @media (max-width: 720px){
     body{
+        nav{
+            .navCont{
+                gap: 13px;
+                .navBtnHome,.navBtnTracks,.navBtnAbout{
+                    padding: 0 5px;
+                }
+            }
+
+        }
         main{
             .mainCont{
                 .tracks{
-                    height: 1300px;
+                    height: 1350px;
                     .tracksCont{
                         .tracksCont1,.tracksCont2,.tracksCont3{
                             display: flex;
