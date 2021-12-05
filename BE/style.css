@@ -485,7 +485,6 @@ body footer {
 }
 
 body footer .footerCont {
-  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,6 +497,7 @@ body footer .footerCont {
 }
 
 body footer .footerCont .socials {
+  margin: 0px 10px 0px 10px;
   height: 150px;
   width: 500px;
   min-width: 250px;
@@ -710,10 +710,6 @@ body .credits .creditsCont {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   body footer .footerCont .socials .socialsSC i, body footer .footerCont .socials .socialsIG i, body footer .footerCont .socials .socialsMail i {
     font-size: 4rem;
