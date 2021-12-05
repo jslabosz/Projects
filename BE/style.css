@@ -551,6 +551,9 @@ body .credits .creditsCont {
 }
 
 @media (max-width: 720px) {
+  body header {
+    margin-top: 100px;
+  }
   body nav .navCont {
     gap: 13px;
   }
