@@ -5,6 +5,8 @@ html {
     scroll-behavior: smooth;
   }
 body{    
+    display: flex;
+    flex-direction: column;
     background-image: url("img/pexels-simon-berger-1323550.webp");
     background-size: cover;
     header{
@@ -129,9 +131,12 @@ body{
         // padding-top: 50px;
         // padding-bottom: 50px;
         .mainCont{
+            .mainContLand{
+                height: 60px;
+            }
            .tracks{
-            margin: 50px 50px 0 50px;
-            height: 600px;
+            margin: 0 50px 0 50px;
+            height: 650px;
             // background-image: linear-gradient(to left, transparent,white, white, white,white, white, white, white,white, white, white, white,white, white, white, white, white,white, white, white, white,white, white, white, white, white, white, white, white,white, white, white, white, transparent);
             background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 10px 10px 15px;
@@ -140,6 +145,7 @@ body{
                 padding-top: 50px;
                 font-size: 5rem;
                 font-family: 'Bitter', serif;
+                text-shadow: white 1px 1px 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -156,15 +162,42 @@ body{
                     align-items: center;
                     gap: 30px;
                     iframe{
-                        box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.699);
+                        box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
                     }
                 }
             }
+            .tracksMore{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    font-size: 3rem;
+                    font-family: 'Bitter', serif;
+                    text-decoration: none;
+                    color: black;
+                    text-shadow: white 1px 1px 5px;
+                }
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    font-size: 4rem;
+                    transition: 0.3s;
+                }
+                i:hover{
+                    transform: scale(1.3);
+                    transition: 0.3s;
+                }
+            }
+            }
+            .aboutMeLand{
+                height: 60px;
             }
            .about{
             font-family: 'Bitter', serif;
             padding: 50px;
-            margin: 50px 50px 50px 50px;
+            margin: 0 50px 50px 50px;
             // font-family: 'Pacifico', cursive;
             text-shadow: white 1px 1px 5px;
             display: flex;
@@ -175,8 +208,6 @@ body{
             background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 10px 10px 15px;
             border-radius: 10px;
-    
-            // margin: 0 5vw;
                 .aboutMe{
                     display: flex;
                     flex-direction: column;
@@ -215,6 +246,7 @@ body{
                             justify-content: center;
                             align-items: center;
                             font-size: 3rem;
+                            margin-bottom: 10px;
                         }
                         .aboutSoftwareDesc{
                             display: flex;
@@ -279,6 +311,8 @@ body{
                     text-decoration: none;
                     color: black;
                     text-shadow: white 1px 1px 5px;
+                    display: flex;
+                    justify-content: center;
                 }
                 i{
                     display: flex;
@@ -342,7 +376,7 @@ body{
 @media (max-width: 720px){
     body{
         header{
-            margin-top: 100px;
+            margin-top: 85px;
         }
         nav{
             .navCont{
@@ -356,7 +390,8 @@ body{
         main{
             .mainCont{
                 .tracks{
-                    height: 1350px;
+                    margin: 50px 10px 0 10px;
+                    height: 1000px;
                     .tracksCont{
                         .tracksCont1,.tracksCont2,.tracksCont3{
                             display: flex;
@@ -364,29 +399,36 @@ body{
                         }
                     }
                 }
-            }
-            .about{
-                padding: 30px 30px;
-                .aboutTools{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    text-align: center;
-                    .aboutSoftware{
-                        max-width: 65vw;
+                .about{
+                    margin: 50px 10px 50px 10px;
+                    padding: 30px 30px;
+                    .aboutTools{
                         display: flex;
+                        flex-direction: column;
+                        justify-content: center;
                         text-align: center;
-                    }
-                    .aboutHardware{
-                        max-width: 65vw;
-                        display: flex;
-                        text-align: center;
-                        margin: 0;
-                        .aboutHardwareDesc{
+                        .aboutSoftware{
+                            // max-width: 65vw;
                             display: flex;
-                            flex-direction: column;
-                            justify-content: center;
                             text-align: center;
+                            .aboutSoftwareDesc{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                            }
+                        }
+                        .aboutHardware{
+                            // max-width: 65vw;
+                            display: flex;
+                            text-align: center;
+                            margin: 0;
+                            .aboutHardwareDesc{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                            }
                         }
                     }
                 }
@@ -397,12 +439,22 @@ body{
             // display: flex;
             // flex-direction: column;
             .socials{
-                height: 250px;
-                width: 250px;
+                padding: 20px;
+                gap: 15px;
+                height: fit-content;
+                width: fit-content;
                 display: flex;
                 flex-direction: column;
+                .socialsSC,.socialsIG,.socialsMail{
+                    i{
+                        font-size: 4rem;
+                    }
+                }
             }
         }
+    }
+    .credits{
+        margin-top: 20px;
     }
     }
 }
