@@ -18,7 +18,6 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            // border: 3px dashed white;
             background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 5px 5px 15px;
             border-radius: 10px;
@@ -26,7 +25,6 @@ body{
             width: 300px;
             .img{
                 outline: 5px solid rgba(255, 255, 255, 0.3);
-                // border: 3px solid white;
                 background-size: cover;
                 border-radius: 50%;
                 height: 230px;
@@ -50,29 +48,20 @@ body{
         .navCont{
             font-family: 'Bitter', serif;
             font-size: 2rem;
-            // box-shadow: 3px 3px 10px;
-            // border-radius: 10px;
-            // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             height: 130px;
             width: 700px;
             margin: 10px;
             gap: 80px;
-            // border: 2px dashed black;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             .navBtnHome{
-                // border: 3px solid rgba(255, 255, 255, 0.5);
                 box-shadow: 3px 3px 10px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.8);
-                // font-size: 2rem;
-                // border-radius: 5px;
-                // background-color: rgba(255, 255, 255, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // border: 2px dashed black;
                 height: 50%;
                 width: 40%;
                 transition: 0.5s;
@@ -82,17 +71,12 @@ body{
                 }
             }
             .navBtnTracks{
-                // border: 3px solid rgba(255, 255, 255, 0.5);
                 box-shadow: 3px 3px 10px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.8);
-                // font-size: 2rem;
-                // border-radius: 5px;
-                // background-color: rgba(255, 255, 255, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // border: 2px dashed black;
                 height: 50%;
                 width: 40%;
                 transition: 0.5s;
@@ -102,17 +86,12 @@ body{
                 }
             }
             .navBtnAbout{
-                // border: 3px solid rgba(255, 255, 255, 0.5);
                 box-shadow: 3px 3px 10px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.8);
-                // font-size: 2rem;
-                // border-radius: 5px;
-                // background-color: rgba(255, 255, 255, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // border: 2px dashed black;
                 height: 50%;
                 width: 40%;
                 transition: 0.5s;
@@ -128,8 +107,6 @@ body{
         }
     }
     main{
-        // padding-top: 50px;
-        // padding-bottom: 50px;
         .mainCont{
             .mainContLand{
                 height: 60px;
@@ -137,7 +114,6 @@ body{
            .tracks{
             margin: 0 50px 0 50px;
             height: 650px;
-            // background-image: linear-gradient(to left, transparent,white, white, white,white, white, white, white,white, white, white, white,white, white, white, white, white,white, white, white, white,white, white, white, white, white, white, white, white,white, white, white, white, transparent);
             background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 10px 10px 15px;
             border-radius: 10px;
@@ -149,7 +125,6 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // margin-top: 50px;
             }
             .tracksCont{
                 padding: 50px;
@@ -198,13 +173,11 @@ body{
             font-family: 'Bitter', serif;
             padding: 50px;
             margin: 0 50px 50px 50px;
-            // font-family: 'Pacifico', cursive;
             text-shadow: white 1px 1px 5px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            // height: 50vh;
             background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
             box-shadow: 10px 10px 15px;
             border-radius: 10px;
@@ -282,20 +255,15 @@ body{
         }
     }
     footer{
-        // text-decoration: none;
+
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         .footerCont{
-            // height: 250px;
-            // width: 90vw;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            // box-shadow: 5px 5px 15px;
-            // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-            .socials{
             margin: 0px 10px 0px 10px;
             height: 150px;
             width: 500px;
@@ -365,7 +333,6 @@ body{
     .credits{
         display: flex;
         justify-content: end;
-        // background-color: honeydew;
         .creditsCont{
             font-size: 0.6rem;
             background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
@@ -373,8 +340,7 @@ body{
             border-radius: 2px;
         }
     }
-}
-@media (max-width: 720px){
+@media (max-width: 800px){
     body{
         header{
             margin-top: 85px;
@@ -409,7 +375,6 @@ body{
                         justify-content: center;
                         text-align: center;
                         .aboutSoftware{
-                            // max-width: 65vw;
                             display: flex;
                             text-align: center;
                             .aboutSoftwareDesc{
@@ -420,7 +385,7 @@ body{
                             }
                         }
                         .aboutHardware{
-                            // max-width: 65vw;
+
                             display: flex;
                             text-align: center;
                             margin: 0;
@@ -437,15 +402,13 @@ body{
         }
     footer{
         .footerCont{
-            // display: flex;
-            // flex-direction: column;
+            width: 320px;
             .socials{
                 padding: 20px;
                 gap: 15px;
                 height: fit-content;
                 width: fit-content;
                 display: flex;
-                // flex-direction: column;
                 .socialsSC,.socialsIG,.socialsMail{
                     i{
                         font-size: 4rem;
