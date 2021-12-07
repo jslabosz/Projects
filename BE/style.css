@@ -488,6 +488,10 @@ body footer .footerCont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -498,9 +502,6 @@ body footer .footerCont {
   height: 150px;
   width: 500px;
   min-width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
   border-radius: 10px;
@@ -508,7 +509,19 @@ body footer .footerCont {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
 }
 
-body footer .socialsSC a {
+body footer .footerCont .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body footer .footerCont .socials .socialsSC a {
   text-decoration: none;
   color: black;
   text-shadow: white 1px 1px 5px;
@@ -520,7 +533,7 @@ body footer .socialsSC a {
           justify-content: center;
 }
 
-body footer .socialsSC i {
+body footer .footerCont .socials .socialsSC i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,20 +546,20 @@ body footer .socialsSC i {
   transition: 0.3s;
 }
 
-body footer .socialsSC i:hover {
+body footer .footerCont .socials .socialsSC i:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body footer .socialsIG a {
+body footer .footerCont .socials .socialsIG a {
   text-decoration: none;
   color: black;
   text-shadow: white 1px 1px 5px;
 }
 
-body footer .socialsIG i {
+body footer .footerCont .socials .socialsIG i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,20 +572,20 @@ body footer .socialsIG i {
   transition: 0.3s;
 }
 
-body footer .socialsIG i:hover {
+body footer .footerCont .socials .socialsIG i:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body footer .socialsMail a {
+body footer .footerCont .socials .socialsMail a {
   text-decoration: none;
   color: black;
   text-shadow: white 1px 1px 5px;
 }
 
-body footer .socialsMail i {
+body footer .footerCont .socials .socialsMail i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +598,7 @@ body footer .socialsMail i {
   transition: 0.3s;
 }
 
-body footer .socialsMail i:hover {
+body footer .footerCont .socials .socialsMail i:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: 0.3s;

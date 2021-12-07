@@ -262,71 +262,74 @@ body{
         align-items: center;
         .footerCont{
             display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
             margin: 0px 10px 0px 10px;
             height: 150px;
             width: 500px;
             min-width: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
             box-shadow: 5px 5px 15px;
             border-radius: 10px;
             background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+            .socials{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .socialsSC{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        text-shadow: white 1px 1px 5px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    i{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 5rem;
+                        transition: 0.3s;
+                    }
+                    i:hover{
+                        transform: scale(1.3);
+                        transition: 0.3s;
+                    }
+                }
+                .socialsIG{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        text-shadow: white 1px 1px 5px;
+                    }
+                    i{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 5rem;
+                        transition: 0.3s;
+                    }
+                    i:hover{
+                        transform: scale(1.3);
+                        transition: 0.3s;
+                    }
+                }
+                .socialsMail{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        text-shadow: white 1px 1px 5px;
+                    }
+                    i{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 5rem;
+                        transition: 0.3s;
+                    }
+                    i:hover{
+                        transform: scale(1.3);
+                        transition: 0.3s;
+                    }
+                }
             }
-            .socialsSC{
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-shadow: white 1px 1px 5px;
-                    display: flex;
-                    justify-content: center;
-                }
-                i{
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 5rem;
-                    transition: 0.3s;
-                }
-                i:hover{
-                    transform: scale(1.3);
-                    transition: 0.3s;
-                }
-            }
-            .socialsIG{
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-shadow: white 1px 1px 5px;
-                }
-                i{
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 5rem;
-                    transition: 0.3s;
-                }
-                i:hover{
-                    transform: scale(1.3);
-                    transition: 0.3s;
-                }
-            }
-            .socialsMail{
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-shadow: white 1px 1px 5px;
-                }
-                i{
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 5rem;
-                    transition: 0.3s;
-                }
-                i:hover{
-                    transform: scale(1.3);
-                    transition: 0.3s;
-                }
             }
         }
     }
