@@ -22,9 +22,11 @@
         text-align: center;
         line-height: 2em;
     }
-    // div{
-    //     padding: 0.25em;
-    // }
+    i{
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
 }
 // @media (max-width: 720px){
 //     body{
@@ -38,10 +40,26 @@
 //         }
 //     }
 // }
+@mixin btnStyle {
+    background-color: var(--secondary-light-clr);
+    box-shadow: 0em 0em 0.3em black;
+    border-radius: 2px;
+    padding: 0.2em;
+}
+@keyframes bg-animation {
+    0% {background-position: left;} 
+    100% {background-position: right;}
+}
 body{
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    background-image: linear-gradient(90deg, #36213E, #36213E, #36213E, #554971, #554971, rgb(240, 240, 240), #F0E7D8, #F0E7D8, #AB9B96, #AB9B96, #AB9B96);
+    background-size: 700%;
+    animation: bg-animation 20s infinite alternate;
     nav{
-        top: 0;
+        z-index: 99;
+        top: 1vh;
         bottom: 95vh;
         left: 0;
         right: 0;
@@ -52,18 +70,31 @@ body{
         padding: 0;
         // background-color: var(--grey);
         .navCont{
-            height: 5vh;
+            height: fit-content;
             display: flex;
             flex: 100%;
             // flex-direction: column;
             align-items: center;
             justify-content: space-around;
             .navContBtn{
-                border: 1px solid white;
+                // border: 1px solid white;
+                @include btnStyle;
+                a{
+                    text-decoration: none;
+                    i{
+                        color: black;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
             }
         }
-        .navTopBtn{
-            border: 1px solid white;
+        .navToTopBtn{
+            // border: 1px solid white;
+            @include btnStyle;
+            padding: 0;
             top: 95vh;
             bottom: 0;
             left: 95vw;
@@ -72,9 +103,21 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+            a{
+                text-decoration: none;
+                i{
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
     }
     header{
+        margin: 0.5em;
+        // margin-top: 0;
         background-color: var(--primary-dark-clr);
         .headerCont{
             height: 100vh;
@@ -83,16 +126,17 @@ body{
             align-items: center;
             justify-content: center;
             h1{
-
+                color: var(--secondary-light-clr);
             }
             p{
-                
+                color: var(--secondary-light-clr);
             }
         }
     }
     main{
         .mainCont{
             .projects{
+                margin: 1em;
                 min-height: 100vh;
                 height: fit-content;
                 background-color: var(--primary-light-clr);
@@ -101,10 +145,10 @@ body{
                 align-items: center;
                 justify-content: center;
                 h2{
-
+                    color: var(--secondary-light-clr);
                 }
                 p{
-
+                    color: var(--secondary-light-clr);
                 }
                 .projectsCont{
                     display: grid;
@@ -117,6 +161,7 @@ body{
                 }
             }
             .skills{
+                margin: 1em;
                 background-color: var(--grey);
                 .skillsCont{
                     min-height: 100vh;
@@ -125,21 +170,22 @@ body{
                     align-items: center;
                     justify-content: center;
                     h2{
-
+                        color: var(--primary-dark-clr);
                     }
                     p{
-
+                        color: var(--primary-dark-clr);
                     }
                     .skillsSection{
                         display: flex;
                         gap: 2em;
                         div{
-
+                            color: var(--primary-dark-clr);
                         }
                     }
                 }
             }
             .about{
+                margin: 1em;
                 background-color: var(--secondary-light-clr);
                 .aboutCont{
                     min-height: 100vh;
@@ -148,17 +194,18 @@ body{
                     align-items: center;
                     justify-content: center;
                     h2{
-
+                        color: var(--primary-dark-clr);
                     }
                     p{
-                        // text-align: center;
-                        // line-height: 2em;
+                        color: var(--primary-dark-clr);
                     }
                 }
             }
         }
     }
     footer{
+        margin: 0.5em;
+        // margin-bottom: 0;
         background-color: var(--secondary-dark-clr);
         .footerCont{
             height: 100vh;
@@ -174,7 +221,12 @@ body{
 
                 }
                 .contactBtn{
-
+                    a{
+                        i{
+                            color: black;
+                            font-size: 8em;
+                        }
+                    }
                 }
             }
         }
