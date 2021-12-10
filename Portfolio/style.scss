@@ -56,7 +56,7 @@
         left: 100%;
     }
 }
-@keyframes text-fade-in {
+@keyframes fade-in {
     0% {opacity:0;}
     100% {opacity:1;}
 }
@@ -69,6 +69,7 @@ body{
     animation: bg-animation 30s infinite alternate;
     nav{
         z-index: 99;
+
         top: 2vh;
         bottom: 95vh;
         left: 0;
@@ -79,6 +80,9 @@ body{
         // justify-content: center;
         padding: 0;
         // background-color: var(--grey);
+        opacity: 0;
+        animation: fade-in 3s forwards;
+        animation-delay: 5.5s;
         .navCont{
             height: fit-content;
             display: flex;
@@ -169,7 +173,7 @@ body{
             p{
                 color: var(--secondary-light-clr);
                 opacity: 0;
-                animation: text-fade-in 3s forwards;
+                animation: fade-in 3s forwards;
                 animation-delay: 4s;
             }
         }

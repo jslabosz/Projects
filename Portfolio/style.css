@@ -63,7 +63,7 @@
   }
 }
 
-@-webkit-keyframes text-fade-in {
+@-webkit-keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@keyframes text-fade-in {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -108,6 +108,11 @@ body nav {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  opacity: 0;
+  -webkit-animation: fade-in 3s forwards;
+          animation: fade-in 3s forwards;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
 }
 
 body nav .navCont {
@@ -268,8 +273,8 @@ body header .headerCont h1::before {
 body header .headerCont p {
   color: var(--secondary-light-clr);
   opacity: 0;
-  -webkit-animation: text-fade-in 3s forwards;
-          animation: text-fade-in 3s forwards;
+  -webkit-animation: fade-in 3s forwards;
+          animation: fade-in 3s forwards;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
