@@ -11,19 +11,19 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     h1,h2,h3,h4{
-        font-family: 'PT Sans', sans-serif;
-        font-weight: 1000;
+        font-family: 'Laila', sans-serif;
+        font-weight: 700;
         text-align: center;
         line-height: 2em;
     }
     p{
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'Laila', sans-serif;
         font-weight: 500;
         text-align: center;
         line-height: 2em;
     }
     i{
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'Laila', sans-serif;
         font-weight: 300;
         font-style: normal;
     }
@@ -50,6 +50,15 @@
 @keyframes bg-animation {
     0% {background-position: left;} 
     100% {background-position: right;}
+}
+@keyframes text-reveal {
+    to{
+        left: 100%;
+    }
+}
+@keyframes text-fade-in {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 body{
     display: flex;
@@ -145,9 +154,23 @@ body{
             justify-content: center;
             h1{
                 color: var(--secondary-light-clr);
+                position: relative;
+            }
+            h1::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -0.5em;
+                left: -0.5em;
+                background: var(--primary-dark-clr);
+                animation: text-reveal 4s forwards;
             }
             p{
                 color: var(--secondary-light-clr);
+                opacity: 0;
+                animation: text-fade-in 3s forwards;
+                animation-delay: 4s;
             }
         }
     }
@@ -182,6 +205,7 @@ body{
                         opacity: 1;
                         padding: 0.5em;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         height: 280px;
@@ -200,7 +224,6 @@ body{
                                 height: 280px;
                                 width: 280px;
                             }
-
                         }
                     }
                     .projectsItem:hover{
