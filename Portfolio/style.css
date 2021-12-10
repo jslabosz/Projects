@@ -63,13 +63,13 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#36213E), color-stop(#36213E), color-stop(#36213E), color-stop(#554971), color-stop(#554971), color-stop(#f0f0f0), color-stop(#F0E7D8), color-stop(#F0E7D8), color-stop(#AB9B96), color-stop(#AB9B96), to(#AB9B96));
   background-image: linear-gradient(90deg, #36213E, #36213E, #36213E, #554971, #554971, #f0f0f0, #F0E7D8, #F0E7D8, #AB9B96, #AB9B96, #AB9B96);
   background-size: 700%;
-  -webkit-animation: bg-animation 20s infinite alternate;
-          animation: bg-animation 20s infinite alternate;
+  -webkit-animation: bg-animation 30s infinite alternate;
+          animation: bg-animation 30s infinite alternate;
 }
 
 body nav {
   z-index: 99;
-  top: 1vh;
+  top: 2vh;
   bottom: 95vh;
   left: 0;
   right: 0;
@@ -98,11 +98,16 @@ body nav .navCont {
 }
 
 body nav .navCont .navContBtn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: var(--secondary-light-clr);
-  -webkit-box-shadow: 0em 0em 0.3em black;
-          box-shadow: 0em 0em 0.3em black;
-  border-radius: 2px;
+  opacity: 0.3;
+  -webkit-box-shadow: 0 0 0.3em black;
+          box-shadow: 0 0 0.3em black;
+  border-radius: 5px;
   padding: 0.2em;
+  height: 87px;
+  width: 200px;
 }
 
 body nav .navCont .navContBtn a {
@@ -126,17 +131,30 @@ body nav .navCont .navContBtn a i {
           justify-content: center;
 }
 
+body nav .navCont .navContBtn:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 0 1em black;
+          box-shadow: 0 0 1em black;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body nav .navToTopBtn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: var(--secondary-light-clr);
-  -webkit-box-shadow: 0em 0em 0.3em black;
-          box-shadow: 0em 0em 0.3em black;
-  border-radius: 2px;
+  opacity: 0.3;
+  -webkit-box-shadow: 0 0 0.3em black;
+          box-shadow: 0 0 0.3em black;
+  border-radius: 5px;
   padding: 0.2em;
   padding: 0;
-  top: 95vh;
-  bottom: 0;
-  left: 95vw;
-  right: 0;
+  top: 94vh;
+  bottom: 0.5vh;
+  left: 94vw;
+  right: 0.5vw;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,9 +188,17 @@ body nav .navToTopBtn a i {
           justify-content: center;
 }
 
+body nav .navToTopBtn:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-0.3em);
+          transform: translateY(-0.3em);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body header {
-  margin: 0.5em;
   background-color: var(--primary-dark-clr);
+  opacity: 0.95;
 }
 
 body header .headerCont {
@@ -201,12 +227,13 @@ body header .headerCont p {
 }
 
 body main .mainCont .projects {
-  margin: 1em;
+  gap: 1em;
   min-height: 100vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: var(--primary-light-clr);
+  opacity: 0.95;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,13 +258,89 @@ body main .mainCont .projects p {
 }
 
 body main .mainCont .projects .projectsCont {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+body main .mainCont .projects .projectsCont .projectsItem {
+  opacity: 1;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+  width: 280px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 1.5em white;
+          box-shadow: 0 0 1.5em white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .mainCont .projects .projectsCont .projectsItem a img {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+  width: 280px;
+}
+
+body main .mainCont .projects .projectsCont .projectsItem:hover {
+  opacity: 1;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+  width: 280px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2em white;
+          box-shadow: 0 0 2em white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .mainCont .projects .projectsCont .projectsItem:hover a img {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+  width: 280px;
 }
 
 body main .mainCont .skills {
-  margin: 1em;
   background-color: var(--grey);
+  opacity: 0.95;
 }
 
 body main .mainCont .skills .skillsCont {
@@ -277,8 +380,8 @@ body main .mainCont .skills .skillsCont .skillsSection div {
 }
 
 body main .mainCont .about {
-  margin: 1em;
   background-color: var(--secondary-light-clr);
+  opacity: 0.95;
 }
 
 body main .mainCont .about .aboutCont {
@@ -307,8 +410,8 @@ body main .mainCont .about .aboutCont p {
 }
 
 body footer {
-  margin: 0.5em;
   background-color: var(--secondary-dark-clr);
+  opacity: 0.95;
 }
 
 body footer .footerCont {
@@ -340,8 +443,22 @@ body footer .footerCont .contact {
           justify-content: center;
 }
 
+body footer .footerCont .contact .contactBtn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body footer .footerCont .contact .contactBtn a i {
   color: black;
   font-size: 8em;
+  opacity: 1;
+}
+
+body footer .footerCont .contact .contactBtn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
