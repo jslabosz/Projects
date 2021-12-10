@@ -111,8 +111,8 @@ body nav {
   opacity: 0;
   -webkit-animation: fade-in 3s forwards;
           animation: fade-in 3s forwards;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 body nav .navCont {
@@ -263,11 +263,13 @@ body header .headerCont h1::before {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -0.5em;
-  left: -0.5em;
+  right: 0;
+  left: 0;
   background: var(--primary-dark-clr);
   -webkit-animation: text-reveal 4s forwards;
           animation: text-reveal 4s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 body header .headerCont p {
@@ -275,8 +277,8 @@ body header .headerCont p {
   opacity: 0;
   -webkit-animation: fade-in 3s forwards;
           animation: fade-in 3s forwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
 }
 
 body main .mainCont .projects {
@@ -530,6 +532,8 @@ body footer .footerCont .contact .contactBtn:hover {
     line-height: 1.3em;
   }
   * p {
+    padding-left: 0.35em;
+    padding-right: 0.35em;
     font-weight: 500;
     text-align: center;
     line-height: 1.3em;
@@ -563,6 +567,21 @@ body footer .footerCont .contact .contactBtn:hover {
   }
   body main .mainCont .about .aboutCont p {
     font-size: 0.85em;
+  }
+  body main footer {
+    max-width: 100vw;
+  }
+  body main footer .footerCont .contact h1 {
+    font-size: 0.5em;
+  }
+  body main footer .footerCont .contact .contactBtn {
+    font-size: 0.5em;
+  }
+  body main footer .footerCont .contact .contactBtn a {
+    font-size: 0.5em;
+  }
+  body main footer .footerCont .contact .contactBtn a i {
+    font-size: 0.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
