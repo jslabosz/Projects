@@ -395,20 +395,16 @@ body{
                     }
                 }
             }
-            footer{
-                max-width: 100vw;
-                .footerCont{
-                    .contact{
-                        h1{
-                            font-size: 0.5em;
-                        }
-                        .contactBtn{
-                            font-size: 0.5em;
-                            a{
-                                font-size: 0.5em;
-                                i{
-                                    font-size: 0.5em;
-                                }
+        }
+        footer{
+            .footerCont{
+                .contact{
+                    h1{
+                    }
+                    .contactBtn{
+                        a{
+                            i{
+                                font-size: 5em;
                             }
                         }
                     }

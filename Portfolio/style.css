@@ -568,20 +568,8 @@ body footer .footerCont .contact .contactBtn:hover {
   body main .mainCont .about .aboutCont p {
     font-size: 0.85em;
   }
-  body main footer {
-    max-width: 100vw;
-  }
-  body main footer .footerCont .contact h1 {
-    font-size: 0.5em;
-  }
-  body main footer .footerCont .contact .contactBtn {
-    font-size: 0.5em;
-  }
-  body main footer .footerCont .contact .contactBtn a {
-    font-size: 0.5em;
-  }
-  body main footer .footerCont .contact .contactBtn a i {
-    font-size: 0.5em;
+  body footer .footerCont .contact .contactBtn a i {
+    font-size: 5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
