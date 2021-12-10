@@ -28,18 +28,6 @@
         font-style: normal;
     }
 }
-// @media (max-width: 720px){
-//     body{
-//         nav{
-//             background-color: var(--secondary-light-clr);
-//             top: 95vh;
-//             bottom: 0;
-//             left: 0;
-//             right: 0;
-//             position: sticky;
-//         }
-//     }
-// }
 @mixin btnStyle {
     background-color: var(--secondary-light-clr);
     opacity: 0.3;
@@ -69,7 +57,6 @@ body{
     animation: bg-animation 30s infinite alternate;
     nav{
         z-index: 99;
-
         top: 2vh;
         bottom: 95vh;
         left: 0;
@@ -275,6 +262,9 @@ body{
                     h2{
                         color: var(--primary-dark-clr);
                     }
+                    h4{
+                        color: var(--primary-dark-clr);
+                    }
                     p{
                         color: var(--primary-dark-clr);
                     }
@@ -345,6 +335,49 @@ body{
                 //     transition: 0.5s;
                 //     opacity: 1;
                 // }
+            }
+        }
+    }
+}
+@media (max-width: 720px){
+    *{
+        h1,h2,h3,h4{
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.1em;
+        }
+        p{
+            font-weight: 500;
+            text-align: center;
+            line-height: 1.1em;
+        }
+        i{
+            font-weight: 300;
+            font-style: normal;
+        }
+    }
+    body{
+        nav{
+        display: none;
+        }
+        main{
+            .mainCont{
+                .projects{
+                    .projectsCont{
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 2em;
+                    }
+                }
+                .skills{
+                    .skillsCont{
+                        .skillsSection{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0;
+                        }
+                    }
+                }
             }
         }
     }
