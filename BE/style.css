@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Bitter', serif;
 }
 
 html {
@@ -20,7 +21,6 @@ body {
 }
 
 body header {
-  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,17 +42,16 @@ body header .headerCont {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-  -webkit-box-shadow: 5px 5px 15px;
-          box-shadow: 5px 5px 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 5px 5px 15px black;
+          box-shadow: 5px 5px 15px black;
   border-radius: 10px;
   height: 300px;
   width: 300px;
 }
 
 body header .headerCont .img {
-  outline: 5px solid rgba(255, 255, 255, 0.3);
+  outline: 5px solid rgba(255, 255, 255, 0.6);
   background-size: cover;
   border-radius: 50%;
   height: 230px;
@@ -71,7 +70,8 @@ body header .headerCont .img:hover, body header .headerCont img:active {
 }
 
 body nav {
-  top: 0px;
+  margin-top: 2em;
+  top: 0;
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -88,22 +88,24 @@ body nav {
 body nav .navCont {
   font-family: 'Bitter', serif;
   font-size: 2rem;
-  height: 130px;
-  width: 700px;
-  margin: 10px;
-  gap: 80px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body nav .navCont .navBtnHome {
+body nav .navCont div {
   -webkit-box-shadow: 3px 3px 10px;
           box-shadow: 3px 3px 10px;
   border-radius: 10px;
@@ -117,72 +119,60 @@ body nav .navCont .navBtnHome {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50%;
-  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5em;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-body nav .navCont .navBtnHome a {
+body nav .navCont div a {
   color: black;
   text-decoration: none;
 }
 
-body nav .navCont .navBtnTracks {
-  -webkit-box-shadow: 3px 3px 10px;
-          box-shadow: 3px 3px 10px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50%;
-  width: 40%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-body nav .navCont .navBtnTracks a {
-  color: black;
-  text-decoration: none;
-}
-
-body nav .navCont .navBtnAbout {
-  -webkit-box-shadow: 3px 3px 10px;
-          box-shadow: 3px 3px 10px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50%;
-  width: 40%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-body nav .navCont .navBtnAbout a {
-  color: black;
-  text-decoration: none;
-}
-
-body nav .navCont .navBtnTracks:hover, body nav .navCont .navBtnAbout:hover, body nav .navCont .navBtnHome:hover {
+body nav .navCont div:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .mainCont {
+  width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .mainCont .mainContLand {
@@ -190,33 +180,30 @@ body main .mainCont .mainContLand {
 }
 
 body main .mainCont .tracks {
-  margin: 0 50px 0 50px;
-  height: 650px;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  margin-top: 2em;
+  padding: 3em;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 10px 10px 15px;
           box-shadow: 10px 10px 15px;
   border-radius: 10px;
 }
 
-body main .mainCont .tracks .tracksTitle {
-  padding-top: 50px;
-  font-size: 5rem;
-  font-family: 'Bitter', serif;
-  text-shadow: white 1px 1px 10px;
+body main .mainCont .tracks h1 {
+  font-size: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 body main .mainCont .tracks .tracksCont {
-  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,10 +211,17 @@ body main .mainCont .tracks .tracksCont {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
 }
 
-body main .mainCont .tracks .tracksCont .tracksCont1, body main .mainCont .tracks .tracksCont .tracksCont2, body main .mainCont .tracks .tracksCont .tracksCont3 {
+body main .mainCont .tracks .tracksCont div {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,15 +231,18 @@ body main .mainCont .tracks .tracksCont .tracksCont1, body main .mainCont .track
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 1.5em;
 }
 
-body main .mainCont .tracks .tracksCont .tracksCont1 iframe, body main .mainCont .tracks .tracksCont .tracksCont2 iframe, body main .mainCont .tracks .tracksCont .tracksCont3 iframe {
-  -webkit-box-shadow: 0px 0px 10px white;
-          box-shadow: 0px 0px 10px white;
+body main .mainCont .tracks .tracksCont div iframe {
+  -webkit-box-shadow: 0px 0px 13px white;
+          box-shadow: 0px 0px 13px white;
 }
 
-body main .mainCont .tracks .tracksMore {
+body main .mainCont .tracks .tracksCont h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,66 +254,36 @@ body main .mainCont .tracks .tracksMore {
           align-items: center;
 }
 
-body main .mainCont .tracks .tracksMore a {
+body main .mainCont .tracks .tracksCont h2 a {
   font-size: 3rem;
   font-family: 'Bitter', serif;
   text-decoration: none;
   color: black;
-  text-shadow: white 1px 1px 5px;
-}
-
-body main .mainCont .tracks .tracksMore i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 4rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body main .mainCont .tracks .tracksMore i:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body main .mainCont .aboutMeLand {
-  height: 60px;
 }
 
 body main .mainCont .about {
-  font-family: 'Bitter', serif;
-  padding: 50px;
-  margin: 0 50px 50px 50px;
-  text-shadow: white 1px 1px 5px;
+  padding: 3em;
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-  -webkit-box-shadow: 10px 10px 15px;
-          box-shadow: 10px 10px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 10px 10px 15px black;
+          box-shadow: 10px 10px 15px black;
   border-radius: 10px;
 }
 
@@ -336,7 +303,7 @@ body main .mainCont .about .aboutMe {
           align-items: center;
 }
 
-body main .mainCont .about .aboutMe .aboutMeTitle {
+body main .mainCont .about .aboutMe h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,85 +313,35 @@ body main .mainCont .about .aboutMe .aboutMeTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
   font-size: 4rem;
 }
 
-body main .mainCont .about .aboutMe .aboutMeDesc {
-  margin-bottom: 50px;
+body main .mainCont .about .aboutMe p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
 body main .mainCont .about .aboutTools {
-  gap: 50px;
+  min-width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-body main .mainCont .about .aboutTools .aboutSoftware {
-  width: 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3rem;
-  margin-bottom: 10px;
+  gap: 3em;
 }
 
-body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareDesc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-body main .mainCont .about .aboutTools .aboutHardware {
-  width: 300px;
+body main .mainCont .about .aboutTools div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,53 +349,41 @@ body main .mainCont .about .aboutTools .aboutHardware {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareDesc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100%;
+  width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+}
+
+body main .mainCont .about .aboutTools div h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+body main .mainCont .about .aboutTools div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 body footer {
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -495,18 +400,15 @@ body footer .footerCont {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0px 10px 0px 10px;
-  height: 150px;
-  width: 500px;
-  min-width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 8em;
+  width: 24em;
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 body footer .footerCont .socials {
@@ -516,15 +418,14 @@ body footer .footerCont .socials {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body footer .footerCont .socials .socialsSC a {
   text-decoration: none;
   color: black;
-  text-shadow: white 1px 1px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +457,6 @@ body footer .footerCont .socials .socialsSC i:hover {
 body footer .footerCont .socials .socialsIG a {
   text-decoration: none;
   color: black;
-  text-shadow: white 1px 1px 5px;
 }
 
 body footer .footerCont .socials .socialsIG i {
@@ -582,7 +482,6 @@ body footer .footerCont .socials .socialsIG i:hover {
 body footer .footerCont .socials .socialsMail a {
   text-decoration: none;
   color: black;
-  text-shadow: white 1px 1px 5px;
 }
 
 body footer .footerCont .socials .socialsMail i {
@@ -605,7 +504,7 @@ body footer .footerCont .socials .socialsMail i:hover {
   transition: 0.3s;
 }
 
-.credits {
+body .credits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,115 +513,13 @@ body footer .footerCont .socials .socialsMail i:hover {
           justify-content: end;
 }
 
-.credits .creditsCont {
-  font-size: 0.6rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.75)), color-stop(rgba(255, 255, 255, 0.5)), color-stop(rgba(255, 255, 255, 0.3)), to(transparent));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+body .credits .creditsCont {
+  padding: 0.25em;
+  margin-top: 4em;
+  font-size: 0.5em;
+  background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
   border-radius: 2px;
-}
-
-@media (max-width: 800px) {
-  body header {
-    margin-top: 85px;
-  }
-  body nav .navCont {
-    gap: 13px;
-  }
-  body nav .navCont .navBtnHome, body nav .navCont .navBtnTracks, body nav .navCont .navBtnAbout {
-    padding: 0 5px;
-  }
-  body main .mainCont .tracks {
-    margin: 50px 10px 0 10px;
-    height: 1000px;
-  }
-  body main .mainCont .tracks .tracksCont .tracksCont1, body main .mainCont .tracks .tracksCont .tracksCont2, body main .mainCont .tracks .tracksCont .tracksCont3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body main .mainCont .about {
-    margin: 50px 10px 50px 10px;
-    padding: 30px 30px;
-  }
-  body main .mainCont .about .aboutTools {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  body main .mainCont .about .aboutTools .aboutSoftware {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-  }
-  body main .mainCont .about .aboutTools .aboutSoftware .aboutSoftwareDesc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  body main .mainCont .about .aboutTools .aboutHardware {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    margin: 0;
-  }
-  body main .mainCont .about .aboutTools .aboutHardware .aboutHardwareDesc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  body footer .footerCont {
-    width: 320px;
-  }
-  body footer .footerCont .socials {
-    padding: 20px;
-    gap: 15px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  body footer .footerCont .socials .socialsSC i, body footer .footerCont .socials .socialsIG i, body footer .footerCont .socials .socialsMail i {
-    font-size: 4rem;
-  }
-  body .credits {
-    margin-top: 20px;
-  }
 }
 /*# sourceMappingURL=style.css.map */

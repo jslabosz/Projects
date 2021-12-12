@@ -1,16 +1,17 @@
 *{
     box-sizing: border-box;
+    font-family: 'Bitter', serif;
 }
 html{
     scroll-behavior: smooth;
   }
-body{    
+body{
     display: flex;
     flex-direction: column;
     background-image: url("img/pexels-simon-berger-1323550.webp");
     background-size: cover;
     header{
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,13 +19,13 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-            box-shadow: 5px 5px 15px;
+            background-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 5px 5px 15px black;
             border-radius: 10px;
             height: 300px;
             width: 300px;
             .img{
-                outline: 5px solid rgba(255, 255, 255, 0.3);
+                outline: 5px solid rgba(255, 255, 255, 0.6);
                 background-size: cover;
                 border-radius: 50%;
                 height: 230px;
@@ -40,7 +41,8 @@ body{
         }
     }
     nav{
-        top: 0px;
+        margin-top: 2em;
+        top: 0;
         position: sticky;
         display: flex;
         justify-content: center;
@@ -48,206 +50,148 @@ body{
         .navCont{
             font-family: 'Bitter', serif;
             font-size: 2rem;
-            height: 130px;
-            width: 700px;
-            margin: 10px;
-            gap: 80px;
+            height: fit-content;
+            width: fit-content;
+            gap: 0.5em;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
-            .navBtnHome{
+            div{
                 box-shadow: 3px 3px 10px;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.8);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 50%;
-                width: 40%;
+                height: fit-content;
+                width: fit-content;
+                padding: 0.5em;
                 transition: 0.5s;
                 a{
                     color: black;
                     text-decoration: none;
                 }
             }
-            .navBtnTracks{
-                box-shadow: 3px 3px 10px;
-                border-radius: 10px;
-                background-color: rgba(255, 255, 255, 0.8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 50%;
-                width: 40%;
-                transition: 0.5s;
-                a{
-                    color: black;
-                    text-decoration: none;
-                }
-            }
-            .navBtnAbout{
-                box-shadow: 3px 3px 10px;
-                border-radius: 10px;
-                background-color: rgba(255, 255, 255, 0.8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 50%;
-                width: 40%;
-                transition: 0.5s;
-                a{
-                    color: black;
-                    text-decoration: none;
-                }
-            }
-            .navBtnTracks:hover,.navBtnAbout:hover,.navBtnHome:hover{
+            div:hover{
                 transition: 0.5s;
                 transform: scale(1.1);
             }
         }
     }
     main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .mainCont{
+            width: 95vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .mainContLand{
                 height: 60px;
             }
            .tracks{
-            margin: 0 50px 0 50px;
-            height: 650px;
-            background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+            margin-top: 2em;
+            padding: 3em;
+            width: 100%;
+            height: fit-content;
+            background-color: rgba(255, 255, 255, 0.6);
             box-shadow: 10px 10px 15px;
             border-radius: 10px;
-            .tracksTitle{
-                padding-top: 50px;
-                font-size: 5rem;
-                font-family: 'Bitter', serif;
-                text-shadow: white 1px 1px 10px;
+            h1{
+                // padding-top: 0.5em;
+                font-size: 5em;
+                // font-family: 'Bitter', serif;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                text-align: center;
             }
             .tracksCont{
-                padding: 50px;
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
-                .tracksCont1,.tracksCont2,.tracksCont3{
+                align-items: center;
+                justify-content: center;
+                gap: 2em;
+                div{
+                    width: 80%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 30px;
+                    gap: 1.5em;
                     iframe{
-                        box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+                        box-shadow: 0px 0px 13px rgba(255, 255, 255, 1);
+                    }
+                }
+                h2{
+                    width: fit-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        font-size: 3rem;
+                        font-family: 'Bitter', serif;
+                        text-decoration: none;
+                        color: black;
+                        // text-shadow: white 1px 1px 5px;
                     }
                 }
             }
-            .tracksMore{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                a{
-                    font-size: 3rem;
-                    font-family: 'Bitter', serif;
-                    text-decoration: none;
-                    color: black;
-                    text-shadow: white 1px 1px 5px;
-                }
-                i{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    font-size: 4rem;
-                    transition: 0.3s;
-                }
-                i:hover{
-                    transform: scale(1.3);
-                    transition: 0.3s;
-                }
-            }
-            }
-            .aboutMeLand{
-                height: 60px;
             }
            .about{
-            font-family: 'Bitter', serif;
-            padding: 50px;
-            margin: 0 50px 50px 50px;
-            text-shadow: white 1px 1px 5px;
+            padding: 3em;
+            margin-top: 2em;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            background-image: linear-gradient(to left,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
-            box-shadow: 10px 10px 15px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: fit-content;
+            background-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 10px 10px 15px black;
             border-radius: 10px;
                 .aboutMe{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: center;
-         
-                    .aboutMeTitle{
+                    align-items: center;        
+                    h1{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin-bottom: 10px;
                         font-size: 4rem;
                     }
-                    .aboutMeDesc{
-                        margin-bottom: 50px;
+                    p{
                         display: flex;
                         justify-content: center;
-                        align-items: center;
                         text-align: center;
-                        font-size: 2rem;
+                        font-size: 1.5em;
                     }
                 }
                 .aboutTools{
-                    gap: 50px;
+                    min-width: 40%;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    .aboutSoftware{
-                        width: 300px;
-                        flex-direction: column;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        .aboutSoftwareTitle{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-size: 3rem;
-                            margin-bottom: 10px;
-                        }
-                        .aboutSoftwareDesc{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                            font-size: 1.5rem;
-                        }
-                    }
-                    .aboutHardware{
-                        width: 300px;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3em;
+                    div{
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        .aboutHardwareTitle{
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+                        h1{
                             display: flex;
                             justify-content: center;
-                            align-items: center;
-                            font-size: 3rem;
-                            margin-bottom: 10px;
-                        }
-                        .aboutHardwareDesc{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                             text-align: center;
-                            font-size: 1.5rem;
+                            font-size: 3rem;
+                        }
+                        p{
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            font-size: 1.25em;
                         }
                     }
                 }
@@ -255,32 +199,29 @@ body{
         }
     }
     footer{
-
+        margin-top: 2em;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         .footerCont{
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-evenly;
-            margin: 0px 10px 0px 10px;
-            height: 150px;
-            width: 500px;
-            min-width: 250px;
+            justify-content: center;
+            height: 8em;
+            width: 24em;
             box-shadow: 5px 5px 15px;
             border-radius: 10px;
-            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+            background-color: rgba(255, 255, 255, 0.6);
             .socials{
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: center;
                 .socialsSC{
                     a{
                         text-decoration: none;
                         color: black;
-                        text-shadow: white 1px 1px 5px;
+                        // text-shadow: white 1px 1px 5px;
                         display: flex;
                         justify-content: center;
                     }
@@ -299,7 +240,7 @@ body{
                     a{
                         text-decoration: none;
                         color: black;
-                        text-shadow: white 1px 1px 5px;
+                        // text-shadow: white 1px 1px 5px;
                     }
                     i{
                         display: flex;
@@ -316,7 +257,7 @@ body{
                     a{
                         text-decoration: none;
                         color: black;
-                        text-shadow: white 1px 1px 5px;
+                        // text-shadow: white 1px 1px 5px;
                     }
                     i{
                         display: flex;
@@ -332,96 +273,16 @@ body{
             }
             }
         }
-    }
     .credits{
         display: flex;
         justify-content: end;
         .creditsCont{
-            font-size: 0.6rem;
-            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), transparent);
+            padding: 0.25em;
+            margin-top: 4em;
+            font-size: 0.5em;
+            background-color: rgba(255, 255, 255, 0.6);
             box-shadow: 5px 5px 15px;
             border-radius: 2px;
         }
-    }
-@media (max-width: 800px){
-    body{
-        header{
-            margin-top: 85px;
-        }
-        nav{
-            .navCont{
-                gap: 13px;
-                .navBtnHome,.navBtnTracks,.navBtnAbout{
-                    padding: 0 5px;
-                }
-            }
-
-        }
-        main{
-            .mainCont{
-                .tracks{
-                    margin: 50px 10px 0 10px;
-                    height: 1000px;
-                    .tracksCont{
-                        .tracksCont1,.tracksCont2,.tracksCont3{
-                            display: flex;
-                            flex-direction: column;
-                        }
-                    }
-                }
-                .about{
-                    margin: 50px 10px 50px 10px;
-                    padding: 30px 30px;
-                    .aboutTools{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        text-align: center;
-                        .aboutSoftware{
-                            display: flex;
-                            text-align: center;
-                            .aboutSoftwareDesc{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                text-align: center;
-                            }
-                        }
-                        .aboutHardware{
-
-                            display: flex;
-                            text-align: center;
-                            margin: 0;
-                            .aboutHardwareDesc{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    footer{
-        .footerCont{
-            width: 320px;
-            .socials{
-                padding: 20px;
-                gap: 15px;
-                height: fit-content;
-                width: fit-content;
-                display: flex;
-                .socialsSC,.socialsIG,.socialsMail{
-                    i{
-                        font-size: 4rem;
-                    }
-                }
-            }
-        }
-    }
-    .credits{
-        margin-top: 20px;
-    }
     }
 }
