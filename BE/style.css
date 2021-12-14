@@ -71,7 +71,7 @@ body header .headerCont .img:hover, body header .headerCont img:active {
 
 body nav {
   margin-top: 2em;
-  top: 0;
+  top: 1em;
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -468,6 +468,9 @@ body .credits .creditsCont {
 }
 
 @media (max-width: 720px) {
+  body nav {
+    top: 0.1em;
+  }
   body nav .navCont {
     gap: 0.1em;
   }
