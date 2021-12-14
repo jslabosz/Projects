@@ -423,18 +423,12 @@ body footer .footerCont .socials {
           justify-content: center;
 }
 
-body footer .footerCont .socials .socialsSC a {
+body footer .footerCont .socials div a {
   text-decoration: none;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-body footer .footerCont .socials .socialsSC i {
+body footer .footerCont .socials div i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,62 +436,12 @@ body footer .footerCont .socials .socialsSC i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 5rem;
+  font-size: 5em;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body footer .footerCont .socials .socialsSC i:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body footer .footerCont .socials .socialsIG a {
-  text-decoration: none;
-  color: black;
-}
-
-body footer .footerCont .socials .socialsIG i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body footer .footerCont .socials .socialsIG i:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body footer .footerCont .socials .socialsMail a {
-  text-decoration: none;
-  color: black;
-}
-
-body footer .footerCont .socials .socialsMail i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body footer .footerCont .socials .socialsMail i:hover {
+body footer .footerCont .socials div i:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: 0.3s;
@@ -521,5 +465,49 @@ body .credits .creditsCont {
   -webkit-box-shadow: 5px 5px 15px;
           box-shadow: 5px 5px 15px;
   border-radius: 2px;
+}
+
+@media (max-width: 720px) {
+  body nav .navCont {
+    gap: 0.1em;
+  }
+  body nav .navCont div {
+    width: 32vw;
+  }
+  body main .mainCont .tracks {
+    padding: 1em;
+  }
+  body main .mainCont .tracks .tracksCont div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .mainCont .about {
+    padding: 1em;
+  }
+  body main .mainCont .about .aboutTools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .footerCont {
+    height: 8em;
+    width: 95vw;
+  }
+  body footer .footerCont .socials {
+    gap: 1em;
+  }
+  body footer .footerCont .socials div i {
+    font-size: 3.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

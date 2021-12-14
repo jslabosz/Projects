@@ -217,26 +217,7 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .socialsSC{
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        // text-shadow: white 1px 1px 5px;
-                        display: flex;
-                        justify-content: center;
-                    }
-                    i{
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 5rem;
-                        transition: 0.3s;
-                    }
-                    i:hover{
-                        transform: scale(1.3);
-                        transition: 0.3s;
-                    }
-                }
-                .socialsIG{
+                div{
                     a{
                         text-decoration: none;
                         color: black;
@@ -245,24 +226,7 @@ body{
                     i{
                         display: flex;
                         flex-direction: column;
-                        font-size: 5rem;
-                        transition: 0.3s;
-                    }
-                    i:hover{
-                        transform: scale(1.3);
-                        transition: 0.3s;
-                    }
-                }
-                .socialsMail{
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        // text-shadow: white 1px 1px 5px;
-                    }
-                    i{
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 5rem;
+                        font-size: 5em;
                         transition: 0.3s;
                     }
                     i:hover{
@@ -284,5 +248,56 @@ body{
             box-shadow: 5px 5px 15px;
             border-radius: 2px;
         }
+    }
+}
+
+@media (max-width: 720px){
+    body{
+        header{}
+        nav{
+            .navCont{
+                gap: 0.1em;
+                div{
+                    width: 32vw;
+                }
+            }
+        }
+        main{
+            .mainCont{
+                .tracks{
+                    padding: 1em;
+                    .tracksCont{
+                    div{
+                        width: 100%;
+                        // border: 3px dashed black;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    }
+                }
+            .about{
+                padding: 1em;
+                .aboutTools{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            }
+        }
+        footer{
+            .footerCont{
+                height: 8em;
+                width: 95vw;
+                .socials{
+                    gap: 1em;
+                    div{
+                        i{
+                            font-size: 3.5em;
+                        }
+                    }
+                }
+            }
+        }
+        .credits{}
     }
 }
